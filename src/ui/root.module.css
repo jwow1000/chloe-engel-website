@@ -1,0 +1,51 @@
+.root {
+  width: 100vw;
+  height: 0.5rem;
+  position: fixed;
+  left: 0;
+  
+}
+
+.header {
+  font-size: 1.3rem;
+  color: black;
+  letter-spacing: 0.5rem;
+  padding: 0 1rem;
+}
+
+.menuRoot {
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  width: 80vw;
+  height: 90vh;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 4rem 0 0 2rem;
+  border: 1px solid black;
+  margin: 0.5rem 0 0 0;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: block;
+  padding: 0.5rem 1rem 0.5rem 0.5rem ;
+  width: min-content;
+}
+
+.links:hover {
+  background-color: rgba(100,230,200,0.5);
+}
+
+/* scale for smaller windows and tablets */
+@media (min-width: 600px) and (max-width: 1199px) {
+  
+}
+
+/* scale for laptops/PC and large screens */
+@media (min-width: 1200px) {
+  
+
+}

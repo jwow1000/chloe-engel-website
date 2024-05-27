@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from "./App.jsx";
+import Root from "./views/Root/Root.jsx";
+import About from "./views/About/About.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,16 +11,14 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    element: <App />,
+    element: <Root />,
     path: "/",
     // errorElement: <ErrorPage />,
     children: [
-      // {
-      //   element: <Search />,
-      //   path: "/search/:term/:page",
-      //   loader: searchLoader 
-      //   // loader: fetchSearch({term, params})
-      // }
+      {
+        path: "about",
+        element: <About />
+      }
 
     ]
   },
