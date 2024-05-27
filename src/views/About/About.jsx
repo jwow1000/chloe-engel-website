@@ -1,12 +1,29 @@
+import outside from "../../assets/nyt_outside.webp";
 import globStyles from "../../ui/global.module.css";
 
 function About() {
   return (
     <div className={globStyles.rootLayout}>
       <div className={globStyles.header}>chloë engel</div>
-      <p>(they/them) or (she/her)</p>
-      <br />
+      <p className={globStyles.p}>(they/them) or (she/her)</p>
       <div className={globStyles.horiLine}></div>
+      <p className={globStyles.p}>
+        chloë engel is a transdisciplinary choreographer and early-childhood educator based in lenape-hoking territory (aka Brooklyn, NY). Their choreographic work explores ritual, lineages of Madness, nostalgia, and family.
+        <br /><br />
+        email: <br />
+        chlochloengel@gmail.com
+        <br />
+        <br/>
+        vimeo: <br/>
+        https://vimeo.com/chlochloengel
+      </p>
+
+      <img 
+        src={outside} 
+        alt="the dancer chloë engel in motion with eyes closed and mouth partially open, body tense and hands raised, captured in mid word and mid movement. Red atheltic pants, and white tank top. they are outside on the street in a city. it's sunny, mid day" 
+        className={globStyles.pic}
+      />
+      <a href="https://www.nytimes.com/2021/07/16/arts/dance/aunts-events-nyc.html"> <small> Krissanne Johnson for The New York Times </small>  </a>
     </div>
   )
 }

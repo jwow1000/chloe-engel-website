@@ -11,7 +11,13 @@ function Root() {
   
   function Menu() {
     return (
-      <div className={styles.menuRoot} onClick={handleClick}>
+      <div 
+        className={styles.menuRoot} 
+        onClick={handleClick}
+        style={{
+          left: (focus) ? "0" : "-80vw"
+        }}
+      >
         <Link to="/" className={styles.links}> 
           home
         </Link>
@@ -30,11 +36,8 @@ function Root() {
       >
         ☰ chloë engel
       </div>
-      {
-        focus && Menu()
-      }
+      <Menu />
 
-      <div className={styles.shape}></div>
       <Outlet />
     </div>
   )

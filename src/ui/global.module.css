@@ -1,9 +1,7 @@
  /* - - - - - - - GLOBAL STYLES - - - - - - - */
 
 .rootLayout {
-  width: 100vw;
-  padding: 2rem 2rem;
-  overflow: hidden;
+  padding: 2rem 10vw;
 }
 
 .header {
@@ -13,16 +11,23 @@
   margin: 0;
 }
 
-p {
+.p {
   font-size: 1rem;
   margin: 0.3rem 0;
+  line-height: 1.7;
+}
 
+.pic {
+  width: 80vw;
+  display: block;
+  margin: 3rem auto 0 auto;
 }
 
 .horiLine {
   height: 1px;
   width: 100%;
   background-color: black;
+  margin: 2rem 0;
 }
 
 /* scale for smaller windows and tablets */

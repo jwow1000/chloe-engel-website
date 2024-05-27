@@ -1,7 +1,6 @@
 .root {
   width: 100vw;
   height: 0.5rem;
-  position: fixed;
   left: 0;
   
 }
@@ -19,12 +18,15 @@
   flex-flow: column wrap;
   gap: 0.5rem;
   width: 80vw;
+  left: 0;
   height: 90vh;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 4rem 0 0 2rem;
   border: 1px solid black;
   margin: 0.5rem 0 0 0;
+  /* animation */
+  transition: left 1s;
 }
 
 .links {
