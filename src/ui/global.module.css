@@ -23,6 +23,11 @@
   margin: 3rem auto 0 auto;
 }
 
+.video {
+  width: 80vw;
+  border: none;
+}
+
 .horiLine {
   height: 1px;
   width: 100%;

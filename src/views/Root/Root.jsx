@@ -24,10 +24,14 @@ function Root() {
         <Link to="about" className={styles.links}> 
           about
         </Link>
+        <Link to="rubber" className={styles.links}> 
+          RUBBER
+        </Link>
       </div>
     )
   }
-  
+
+    
   return (
     <div className={styles.root}>
       <div 
@@ -37,6 +41,12 @@ function Root() {
         ☰ chloë engel
       </div>
       <Menu />
+      <div 
+        className={styles.sideButton}
+        onClick={handleClick}
+      >
+        menu
+      </div>
 
       <Outlet />
     </div>

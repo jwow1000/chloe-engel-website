@@ -9,7 +9,7 @@
   font-size: 1.3rem;
   color: black;
   letter-spacing: 0.5rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 .menuRoot {
@@ -19,10 +19,10 @@
   gap: 0.5rem;
   width: 80vw;
   left: 0;
-  height: 90vh;
+  height: 85vh;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 4rem 0 0 2rem;
+  padding: 2rem 0 0 2rem;
   border: 1px solid black;
   margin: 0.5rem 0 0 0;
   /* animation */
@@ -35,6 +35,17 @@
   display: block;
   padding: 0.5rem 1rem 0.5rem 0.5rem ;
   width: min-content;
+}
+
+.sideButton {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5rem;
+  width: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  padding: 0.5rem;
 }
 
 .links:hover {
