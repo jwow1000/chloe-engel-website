@@ -2,7 +2,7 @@
   width: 100vw;
   height: 0.5rem;
   left: 0;
-  
+  margin:0;
 }
 
 .header {
@@ -32,18 +32,18 @@
 .links {
   text-decoration: none;
   font-size: 1.3rem;
-  display: block;
+  display: inline;
   padding: 0.5rem 1rem 0.5rem 0.5rem ;
-  width: min-content;
+  width:max-content ;
 }
 
 .threeCanvas {
   position: fixed;
   top: 1%;
-  right: 5%;
+  right: 1%;
   z-index: -1;
-  width: 15rem;
-  height: 15rem;
+  width: 5rem;
+  height: 5rem;
 }
 .sideButton {
   position: fixed;
@@ -65,7 +65,10 @@
   .header {
     text-align: center;
   }
-
+  .threeCanvas {
+    width: 9rem;
+    height: 9rem;
+  }
 }
 
 /* scale for laptops/PC and large screens */
@@ -73,5 +76,8 @@
   .header {
     text-align: center;
   } 
-
+  .threeCanvas {
+    width: 15rem;
+    height: 15rem;
+  }
 }

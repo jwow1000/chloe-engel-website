@@ -36,6 +36,9 @@ function Root() {
         <Link to="rubber" className={styles.links}> 
           RUBBER
         </Link>
+        <Link to="iWantToBe" className={styles.links}> 
+          I Want To Be
+        </Link>
       </div>
     )
   }

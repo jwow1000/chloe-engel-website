@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Root from "./views/Root/Root.jsx";
 import About from "./views/About/About.jsx";
+import IWant from "./views/IWant/IWant.jsx";
 import Rubber from "./views/Rubber/Rubber.jsx"; 
 import {
   createBrowserRouter,
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
       {
         path: "rubber",
         element: <Rubber />
-      }
+      },
+      {
+        path: "iWantToBe",
+        element: <IWant />
+      },
+
 
     ]
   },
