@@ -1,10 +1,19 @@
-import { useState } from "react";
-import { Link, Outlet} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, Outlet, useLocation} from "react-router-dom";
+import RandomLines from "../../components/RandomLines/RandomLines.jsx";
 import styles from "../../ui/root.module.css";
+
+
+
 
 function Root() {
   const [focus, setFocus] = useState(false);
-  
+  const [tab, setTab] = useState(false);
+
+  let location = useLocation();
+  useEffect(() => {
+    setTab((prev) => !prev)
+  }, [location]);
   function handleClick() {
     setFocus((prev) => !prev);
   }
@@ -15,7 +24,7 @@ function Root() {
         className={styles.menuRoot} 
         onClick={handleClick}
         style={{
-          left: (focus) ? "0" : "-80vw"
+          left: (focus) ? "0vw" : "-80vw"
         }}
       >
         <Link to="/" className={styles.links}> 
@@ -40,6 +49,17 @@ function Root() {
       >
         ☰ chloë engel
       </div>
+
+      <div className={styles.threeCanvas}>
+        <RandomLines 
+          amount={20}
+          width={5}
+          height={5}
+          margin={0}
+          trigger={tab}
+        />
+      </div>
+
       <Menu />
       <div 
         className={styles.sideButton}

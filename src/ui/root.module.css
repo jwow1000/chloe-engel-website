@@ -37,6 +37,14 @@
   width: min-content;
 }
 
+.threeCanvas {
+  position: fixed;
+  top: 1%;
+  right: 5%;
+  z-index: -1;
+  width: 15rem;
+  height: 15rem;
+}
 .sideButton {
   position: fixed;
   top: 50%;
@@ -54,11 +62,16 @@
 
 /* scale for smaller windows and tablets */
 @media (min-width: 600px) and (max-width: 1199px) {
-  
+  .header {
+    text-align: center;
+  }
+
 }
 
 /* scale for laptops/PC and large screens */
 @media (min-width: 1200px) {
-  
+  .header {
+    text-align: center;
+  } 
 
 }

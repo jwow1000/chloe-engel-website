@@ -1,0 +1,5 @@
+// get a random integer
+export const randomInt = (min,max) => {
+  const answer = Math.floor( ( Math.random() * (max-min) ) + min );
+  return answer;
+}
