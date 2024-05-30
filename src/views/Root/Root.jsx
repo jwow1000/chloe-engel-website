@@ -4,18 +4,21 @@ import RandomLines from "../../components/RandomLines/RandomLines.jsx";
 import styles from "../../ui/root.module.css";
 
 
-
-
 function Root() {
   const [focus, setFocus] = useState(false);
   const [tab, setTab] = useState(false);
 
   let location = useLocation();
   useEffect(() => {
-    setTab((prev) => !prev)
+    setTab((prev) => !prev);
   }, [location]);
+  
   function handleClick() {
     setFocus((prev) => !prev);
+  }
+
+  function handleCanvasClick() {
+    setTab((prev) => !prev); 
   }
   
   function Menu() {
@@ -53,7 +56,10 @@ function Root() {
         ☰ chloë engel
       </div>
 
-      <div className={styles.threeCanvas}>
+      <div 
+        className={styles.threeCanvas}
+        onClick={handleCanvasClick}
+      >
         <RandomLines 
           amount={20}
           width={5}
