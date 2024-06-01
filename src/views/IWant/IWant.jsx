@@ -1,8 +1,10 @@
-import React from 'react'
+import globStyles from "../../ui/global.module.css";
 
 function IWant() {
   return (
-    <div>IWant</div>
+    <div className={globStyles.rootLayout}>
+      
+    </div>
   )
 }
 

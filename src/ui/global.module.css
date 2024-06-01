@@ -4,6 +4,10 @@
   padding: 2rem 10vw;
 }
 
+.links {
+  text-decoration: none;
+}
+
 .header {
   font-size: 1rem;
   font-weight: bold;
@@ -23,6 +27,11 @@
   margin: 3rem auto 0 auto;
 }
 
+.imgContained {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 .video {
   width: 80vw;
   height: 10rem;

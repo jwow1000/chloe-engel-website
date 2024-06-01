@@ -1,4 +1,5 @@
-import outside from "../../assets/nyt_outside.webp";
+import outside from "../../assets/photos/nyt_outside.webp";
+import cv from "../../assets/docs/Chloe_CV_F23.pdf";
 import globStyles from "../../ui/global.module.css";
 
 function About() {
@@ -13,9 +14,13 @@ function About() {
         email: <br />
         chlochloengel@gmail.com
         <br />
-        <br/>
+        <br />
         vimeo: <br/>
         https://vimeo.com/chlochloengel
+        <br />
+        <br />
+        CV: <br />
+        <a href={cv} download={true} className={globStyles.links}>download ↓</a>
       </p>
 
       <img 

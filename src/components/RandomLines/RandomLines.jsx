@@ -1,7 +1,6 @@
 import * as THREE from 'three';
-import { randomInt } from "../../services/myMath.js";
-import { useState, useRef, useEffect } from "react";
-import { Canvas, useFrame } from '@react-three/fiber';
+import { useState, useEffect } from "react";
+import { Canvas } from '@react-three/fiber';
 import { randFloat } from 'three/src/math/MathUtils.js';
 
 
@@ -28,7 +27,7 @@ function RandomLines({ amount, width, height, margin, trigger }) {
   
   const mat = new THREE.LineBasicMaterial({ 
     color: 'hotpink', 
-    lineWidth: '10px' 
+    linewidth: 10 
   });
   return (
       <Canvas >

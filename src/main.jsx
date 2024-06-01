@@ -2,8 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Root from "./views/Root/Root.jsx";
 import About from "./views/About/About.jsx";
+import Home from "./views/Home/Home.jsx";
 import IWant from "./views/IWant/IWant.jsx";
-import Rubber from "./views/Rubber/Rubber.jsx"; 
+import Rubber from "./views/Rubber/Rubber.jsx";
+import Projects from "./views/Projects/Projects.jsx"; 
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,8 +20,16 @@ const router = createBrowserRouter([
     // errorElement: <ErrorPage />,
     children: [
       {
+        path: "/",
+        element: <Home />
+      },
+      {
         path: "about",
         element: <About />
+      },
+      {
+        path: "projects",
+        element: <Projects />,
       },
       {
         path: "rubber",
@@ -29,8 +39,6 @@ const router = createBrowserRouter([
         path: "iWantToBe",
         element: <IWant />
       },
-
-
     ]
   },
   
