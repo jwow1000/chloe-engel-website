@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+.imgContainer {
+  width: 15rem;
+}
+
+.links {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid black; */
+}
+
+
+/* scale for smaller windows and tablets */
+@media (min-width: 600px) and (max-width: 1199px) {
+  
+}
+
+/* scale for laptops/PC and large screens */
+@media (min-width: 1200px) {
+  
+}

@@ -1,4 +1,4 @@
-import globStyles from "../../ui/global.module.css";
+import globStyles from "../../../ui/global.module.css";
 
 function Rubber() {
   return (

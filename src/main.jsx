@@ -3,16 +3,15 @@ import ReactDOM from 'react-dom/client'
 import Root from "./views/Root/Root.jsx";
 import About from "./views/About/About.jsx";
 import Home from "./views/Home/Home.jsx";
-import IWant from "./views/IWant/IWant.jsx";
-import Rubber from "./views/Rubber/Rubber.jsx";
 import Projects from "./views/Projects/Projects.jsx"; 
+import {Rubber, IWant} from "./views/Projects/projectIdx.js";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
 import './index.css'
-
+console.log('RUUBBBER', Rubber)
 const router = createBrowserRouter([
   {
     element: <Root />,
@@ -32,11 +31,11 @@ const router = createBrowserRouter([
         element: <Projects />,
       },
       {
-        path: "rubber",
+        path: "projects/rubber",
         element: <Rubber />
       },
       {
-        path: "iWantToBe",
+        path: "projects/IWantToBe",
         element: <IWant />
       },
     ]

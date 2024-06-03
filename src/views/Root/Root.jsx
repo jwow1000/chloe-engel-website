@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { info } from "../Projects/projectIdx.js";
 import { Link, Outlet, useLocation} from "react-router-dom";
 import RandomLines from "../../components/RandomLines/RandomLines.jsx";
 import styles from "../../ui/root.module.css";
@@ -20,7 +21,7 @@ function Root() {
     e.stopPropagation();
     setFocus((prev) => !prev);
   }
-
+  
   function handleCanvasClick(e) {
     console.log("canvas is clicked")
     e.stopPropagation();
@@ -45,10 +46,11 @@ function Root() {
         </div>
       )
     }
+
     return(
       <div 
         className={styles.menuRoot} 
-        onClick={handleClick}
+        onClick={ handleClick }
         style={{
           left: (focus) ? "0vw" : "-80vw"
         }}
@@ -67,12 +69,16 @@ function Root() {
               <Link to="projects" className={styles.links}> 
                 ** all projects **
               </Link>
-              <Link to="rubber" className={styles.links}> 
-                RUBBER
-              </Link>
-              <Link to="iWantToBe" className={styles.links}> 
-                I Want To Be
-              </Link>
+              { info.map((item, idx) => (
+                <Link 
+                  key={`projLinks${idx}`}
+                  to={`projects/${item.route}`}
+                  className={styles.links}
+                >
+                  {item.name}
+                </Link>
+              ))}
+             
             </div>
           )
         }
@@ -83,13 +89,12 @@ function Root() {
 
     
   return (
-    <div className={styles.root}
-      onClick={handleClick}
+    <div 
+      className={styles.root}
       id="main"
     >
       <div 
         className={styles.header}
-        id="huuuuppuulllaaa"
       >
         ☰ chloë engel
       </div>
@@ -111,7 +116,7 @@ function Root() {
       <Menu />
       <div 
         className={styles.sideButton}
-        onClick={handleClick}
+        onClick={ handleClick }
       >
         menu
       </div>

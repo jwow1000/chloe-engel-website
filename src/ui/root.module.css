@@ -32,11 +32,12 @@
 .links {
   text-decoration: none;
   font-size: 1.3rem;
-  color:rgb(168, 96, 164);
+  color:rgb(42, 124, 255);
   display: inline;
   padding: 0.5rem 1rem 0.5rem 0.5rem ;
   width: max-content ;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
 }
 
 .threeCanvas {
