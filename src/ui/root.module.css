@@ -10,7 +10,9 @@
   color: black;
   letter-spacing: 0.5rem;
   padding: 1rem 1rem;
+  cursor: pointer;
 }
+
 
 .menuRoot {
   position: fixed;
@@ -78,6 +80,7 @@
   writing-mode: vertical-lr;
   text-orientation: mixed;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .links:hover {
