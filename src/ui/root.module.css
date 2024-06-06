@@ -33,7 +33,7 @@
 
 .links {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color:rgb(42, 124, 255);
   display: inline;
   padding: 0.5rem 1rem 0.5rem 0.5rem ;
@@ -96,6 +96,9 @@
     width: 9rem;
     height: 9rem;
   }
+  .links {
+    font-size: 1.3rem;
+  }
 }
 
 /* scale for laptops/PC and large screens */
@@ -107,4 +110,8 @@
     width: 15rem;
     height: 15rem;
   }
+  .links {
+    font-size: 1.3rem;
+  }
+
 }

@@ -17,19 +17,19 @@ function Root() {
   }, [location]);
   
   function handleClick(e) {
-    console.log("big guy is clicked")
+    // console.log("big guy is clicked")
     e.stopPropagation();
     setFocus((prev) => !prev);
   }
   
   function handleCanvasClick(e) {
-    console.log("canvas is clicked")
+    // console.log("canvas is clicked")
     e.stopPropagation();
     setTab((prev) => !prev); 
   }
 
   function handleMenuButton(e) {
-    console.log("menuButton is clicked")
+    // console.log("menuButton is clicked")
     e.stopPropagation();
     setProjLinks((prev) => !prev);
   }
@@ -95,6 +95,7 @@ function Root() {
     >
       <div 
         className={styles.header}
+        onClick={handleClick}
       >
         ☰ chloë engel
       </div>

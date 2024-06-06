@@ -4,14 +4,13 @@ import Root from "./views/Root/Root.jsx";
 import About from "./views/About/About.jsx";
 import Home from "./views/Home/Home.jsx";
 import Projects from "./views/Projects/Projects.jsx"; 
-import {Rubber, IWant} from "./views/Projects/projectIdx.js";
+import {Rubber, IWant, Welter, Organ} from "./views/Projects/projectIdx.js";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
 import './index.css'
-console.log('RUUBBBER', Rubber)
+
 const router = createBrowserRouter([
   {
     element: <Root />,
@@ -37,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "projects/IWantToBe",
         element: <IWant />
+      },
+      {
+        path: "projects/welter",
+        element: <Welter />
+      },
+      {
+        path: "projects/theOrgan",
+        element: <Organ />
       },
     ]
   },

@@ -4,13 +4,13 @@ export const randomInt = (min,max) => {
   return answer;
 }
 
-export const randomList = (num) => {
-  const arr = [];
-  for(let i=0; i<num; i++) {
-    const rand = randomInt(0,num-1);
-    if(arr.includes(rand)) {
+// export const randomList = (num) => {
+//   const arr = [];
+//   for(let i=0; i<num; i++) {
+//     const rand = randomInt(0,num-1);
+//     if(arr.includes(rand)) {
 
-    }
-    arr[i] = 0;
-  }
-}
+//     }
+//     arr[i] = 0;
+//   }
+// }
