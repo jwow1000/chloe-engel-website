@@ -19,6 +19,33 @@
   font-size: 1rem;
   margin: 0.3rem 0;
   line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.small {
+  font-size: 0.8rem;
+  line-height: normal;
+}
+.smallBold {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.insetPoem {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: italic;
+  width: 60vw;
+  margin: 2rem auto;
+  line-height: 1.5rem;
+}
+.spanBlue {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(16, 226, 208);
+  font-size: 1.5rem;
 }
 
 .pic {
