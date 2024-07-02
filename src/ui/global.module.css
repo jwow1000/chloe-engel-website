@@ -49,8 +49,12 @@
 }
 
 .pic {
+  position: relative;
   width: 80vw;
-  display: block;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+
   margin: 3rem auto 0 auto;
 }
 
@@ -58,6 +62,7 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  z-index: -1;
 }
 .video {
   width: 80vw;

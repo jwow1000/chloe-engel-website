@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { info } from "../Projects/projectIdx.js";
 import { Link, Outlet, useLocation} from "react-router-dom";
 import RandomLines from "../../components/RandomLines/RandomLines.jsx";
+import LoadingSVG from "../../components/LoadingPage/LoadingPage.jsx";
 import styles from "../../ui/root.module.css";
 
 
@@ -9,8 +10,13 @@ function Root() {
   const [focus, setFocus] = useState(false);
   const [tab, setTab] = useState(false);
   const [projLinks, setProjLinks] = useState(false);
-
+  const [loadState, setLoadState] = useState(true);
   let location = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => setLoadState(false), 3000);
+  }, []);
+  
   
   useEffect(() => {
     setTab((prev) => !prev);
@@ -87,7 +93,7 @@ function Root() {
     )
   }
 
-    
+  // main return 
   return (
     <div 
       className={styles.root}
@@ -121,7 +127,9 @@ function Root() {
       >
         menu
       </div>
-
+      {
+        loadState && <LoadingSVG />
+      }
       <Outlet />
     </div>
   )
