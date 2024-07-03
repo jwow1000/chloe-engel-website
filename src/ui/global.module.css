@@ -16,7 +16,7 @@
 }
 
 .p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0.3rem 0;
   line-height: 1.7;
   text-align: justify;
@@ -24,13 +24,15 @@
 }
 
 .small {
-  font-size: 0.8rem;
-  line-height: normal;
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
+
 .smallBold {
   font-size: 0.8rem;
   font-weight: bold;
 }
+
 .insetPoem {
   display: block;
   text-align: center;
@@ -39,6 +41,11 @@
   width: 60vw;
   margin: 2rem auto;
   line-height: 1.5rem;
+}
+
+.spanUnderline {
+  text-decoration: underline;
+  font-weight: bold;
 }
 .spanBlue {
   font-style: italic;
@@ -64,6 +71,7 @@
   object-fit: contain;
   z-index: -1;
 }
+
 .video {
   width: 80vw;
   height: 10rem;
@@ -82,6 +90,9 @@
   .video {
     height: 20rem;
   }
+  .p {
+    width: 100%;
+  }
 }
 
 /* scale for laptops/PC and large screens */
@@ -89,5 +100,8 @@
   .video {
     height: 20rem;
   } 
+  .p {
+    width: 70%;
+  }
 
 }
